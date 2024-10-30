@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+* { margin: 0; padding: 0; }
+
+#logo{
+    width: 130px;
+    height: 130px;
+    margin-left: 70px;
+}
+
+#cabecalho{
+    height: 78px;
+    width: auto;
+    padding-top: 0px;
+    align-items: center;
+    align-content: center;
+    /*border: 3px solid red;*/
+    background-color: #f6bb4f;
+    display: flex;
+}
+
+span{
+    align-content: center;
+    text-align: center;
+}
+
+a{
+    align-content: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 2em;
+    text-align: center;
+    display: inline-block;
+    list-style-type: none;
+    /*border: 1px solid rgb(34, 18, 18);*/
+    margin-left: 30px;
+    height: 30px;
+    padding: 20px;
+}
+
+a:hover{
+    font-size: 2.1em;
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid white;
+    height: 30px;
+    width: auto;
+    padding: 20px;
+}
+
+#menu{
+    margin: auto;
+    padding-top: 0;
+}
+
+#topo{
+    display: flex;
+    border: 1px solid rgb(255, 255, 255);
+    align-items: center;
+    align-content: center;
+}
+
+input{
+    border: 1px solid orange;
+    border-radius: 20px;
+    margin-left: 400px;
+    width: 700px;
+    height: 50px;
+    padding-left: 30px;
+    
+    background-color: white;
+    background-image: url('https://th.bing.com/th?id=OIP._RTO9yp1xH5aQA0vS7fpHAHaHW&w=250&h=249&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2');
+    background-position: 690px 10px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+main{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    width: 70%;
+    height: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 20px 50px -44px black;
+}
+
+#disponiveis{
+    margin-top: 30px;
+    padding: 0px;
+}
+
+
+#disponiveis > h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5em;
+    color: orange;
+    margin-left: 10px;
+    display: flex;
+}
+
+.photos{
+    margin-top: 15px;
+    margin-left: 125px;
+}
+
+.photos > img{
+    margin-left: 200px;
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+}
+
+#disponiveis > h2{
+    display: flex;
+    margin-left: 1150px;
+}
+
+
+#banner > img{
+    width: 100%;
+    margin-top: 40px;
+}
