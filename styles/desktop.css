@@ -2,45 +2,69 @@
 
 * { margin: 0; padding: 0; }
 
-#logo{
+
+header #logo{
     width: 130px;
     height: 130px;
-    margin-left: 70px;
 }
 
-#cabecalho{
-    height: 78px;
-    width: auto;
-    padding-top: 0px;
+header{
+    display: flex;
+    width: 100vw;
+    border: 3px solid rgb(255, 0, 0);
+    align-items: center;
+    justify-content: space-around;
+}
+
+header #usericon{
+    height: 30px;
+    margin-left: 10px;
+}
+
+input{
+    border: 1px solid orange;
+    border-radius: 20px;
+    height: 25px;
+    width: 240px;
+    background-color: white;
+    background-image: url('https://th.bing.com/th?id=OIP._RTO9yp1xH5aQA0vS7fpHAHaHW&w=250&h=249&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2');
+    background-position: right center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
     align-items: center;
     align-content: center;
+    margin: 0;
     /*border: 3px solid red;*/
+    width: 100vw;
     background-color: #f6bb4f;
+
+}
+
+nav li, ul{
     display: flex;
+    list-style: none;
 }
 
-span{
-    align-content: center;
-    text-align: center;
-}
-
-a{
+li a{
     align-content: center;
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
     display: inline-block;
     list-style-type: none;
     /*border: 1px solid rgb(34, 18, 18);*/
-    margin-left: 30px;
-    height: 30px;
-    padding: 20px;
 }
 
-a:hover{
+li>a:active{
     font-size: 2.1em;
     color: rgb(255, 255, 255);
     border-bottom: 3px solid white;
@@ -54,37 +78,14 @@ a:hover{
     padding-top: 0;
 }
 
-#topo{
-    display: flex;
-    border: 1px solid rgb(255, 255, 255);
-    align-items: center;
-    align-content: center;
-}
-
-input{
-    border: 1px solid orange;
-    border-radius: 20px;
-    margin-left: 400px;
-    width: 700px;
-    height: 50px;
-    padding-left: 30px;
-    
-    background-color: white;
-    background-image: url('https://th.bing.com/th?id=OIP._RTO9yp1xH5aQA0vS7fpHAHaHW&w=250&h=249&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2');
-    background-position: 690px 10px;
-    background-size: 30px;
-    background-repeat: no-repeat;
-    padding-left: 40px;
-}
-
 main{
+    margin-top: 10px;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(255, 255, 255);
-    width: 70%;
-    height: 1920px;
+    width: 95vw;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0px 20px 50px -44px black;
+    box-shadow: 1px 17px 20px 0px rgba(0, 0, 0, 0.26);
 }
 
 #disponiveis{
@@ -95,31 +96,26 @@ main{
 
 #disponiveis > h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2.5em;
+    font-size: 1.5em;
     color: orange;
     margin-left: 10px;
     display: flex;
 }
 
 .photos{
+    display: flex;
     margin-top: 15px;
-    margin-left: 125px;
+    padding: 10px;
+    justify-content: space-around;
+    gap: 10px;
 }
 
 .photos > img{
-    margin-left: 200px;
-    width: 200px;
-    height: 200px;
-    margin-left: 20px;
+    width: 90px;
+    height: 70px;
 }
-
-#disponiveis > h2{
-    display: flex;
-    margin-left: 1150px;
-}
-
 
 #banner > img{
     width: 100%;
-    margin-top: 40px;
+
 }
