@@ -250,6 +250,10 @@ header{
         font-weight: bolder;
         font-size: 1.5em;
     }
+
+    .infos img{
+        height: 24px;
+    }
     
     #vermais{
         height: 50px;
