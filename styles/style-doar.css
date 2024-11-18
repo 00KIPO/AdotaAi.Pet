@@ -103,13 +103,6 @@ header{
         gap: 30px;
         margin-left: 100px;
     }
-    
-    img#banner{
-        width: 70vw;
-        margin-left: 280px;
-        margin-top: 50px;
-        border-radius: 20px;
-    }
 
     li a{
         align-content: center;
@@ -164,7 +157,7 @@ header{
     }
 
 
-    div#filtros{
+    div#formulario{
         background-color: white;
         width: 70vw;
         height: 150px;
@@ -175,101 +168,6 @@ header{
         padding: 40px;
     }
     
-    #filtros select{
-        width: 400px;
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid rgba(0, 0, 0, 0.192);
-        margin-left: 20px;
-        font-size: 1.1em;
-        margin-bottom: 20px;
-    }
-
-    #filtros input{
-        width: 380px;
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid rgba(0, 0, 0, 0.192);
-        margin-left: 20px;
-        font-size: 1.1em;
-    }
-
-    #filtros button{
-        width: 95%;
-        margin-left: 20px;
-        background-color: #766788;
-        color: white;
-        font-size: 1.3em;
-        padding: 10px;
-        border-radius: 10px;
-        border: none;
-        cursor: pointer;
-    }
-
-    
-    #disponiveis{
-        margin-top: 30px;
-        padding: 0px;
-    }
-    
-    
-    #disponiveis > h1{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 2em;
-        color: #71556b;
-        margin: 15px;
-        margin-bottom: 40px;
-    }
-
-    #gallery{
-        width: 70vw;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 15px;
-    }
-    
-    .photos{
-        width: 250px;
-        border-radius: 10px;
-        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.507);
-        margin-left: 15px;
-    }
-    
-    .photos > img{
-        width: 250px;
-        height: 200px;
-        margin-left: 0px;
-    }
-    
-    .infos{
-        width: 210px;
-        height: 50px;
-        padding: 20px;
-        border-radius: 0px 0px 10px 10px;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    .nome{
-        font-weight: bolder;
-        font-size: 1.5em;
-    }
-
-    .infos img{
-        height: 24px;
-    }
-    
-    #vermais{
-        height: 50px;
-        font-size: 1.5em;
-        color: white;
-        border: 3px solid #126782;
-        background-color: #126782;
-        border-radius: 10px;
-        padding-bottom: 5px;
-        margin-left: 90px;
-    }
-
 }
 
 /*Estilos para celular*/
