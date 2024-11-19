@@ -234,6 +234,11 @@ header{
         border-radius: 10px;
         box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.507);
     }
+
+    .photos:hover{
+        scale: 1.02;
+        transition: 200ms;
+    }
     
     .photos img{
         width: 300px;
