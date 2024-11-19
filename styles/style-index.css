@@ -1,3 +1,5 @@
+/*Estilos para desktop*/
+
 *{
     margin: 0;
     padding: 0;
@@ -14,7 +16,7 @@ header{
 
 
 #disponiveis{
-    padding: 0px;
+    padding: 0;
 }
 
 
@@ -22,134 +24,127 @@ header{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2em;
     color: #ef7689;
-    margin-left: 10px;
     display: flex;
     justify-content: center;
 }
 
 #disponiveis span{
     color: black;
-    margin-left: 4px;
+    margin-left: 0.5rem;
     font-weight: lighter;
 }
 
-.photos div img{
-    width: 300px;
-    height: 300px;
+header #logo{
+    width: 4rem;
+    height: 4rem;
+}
+
+nav{
+    display: flex;
+    height: 8vh;
+    width: 70vw;
+    align-items: center;
+    margin: auto;                
+    justify-content: space-between;
+}
+
+header ul { 
+    list-style: none;
+    display: flex;
+    margin-left: 8%;
+    gap: 30px;
+}
+
+img#banner{
+    width: 70vw;
+    margin-left: 15%;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+li a{
+    align-content: center;
+    text-decoration: none;
+    color: #766788;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    
+}
+
+.itens>a:hover{
+        background-image: linear-gradient(to right, #ef7689, #ff9b8f);
+        color: black;
+        background-clip: text;
+        -webkit-background-clip: text;          
+        /* Adicionado: */
+        -webkit-text-fill-color: transparent;
+}
+
+#cadastrar a:hover{
+    background-color: #766788;
+}
+
+li#cadastrar a{
+    background-color: #4d2d74;
+    color: white;
+    font-weight: lighter;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
 }
 
 
-/*Estilos para desktop*/
-@media screen and (min-width: 768px){
+section{
+    height: 65vh;
+}
 
-    
-    header #logo{
-        width: 60px;
-        height: 60px;
-    }
-    
-    header{
-        display: flex;
-        align-items: center;
-        padding-left: 300px;
-    }
-    
-    header ul { 
-        list-style: none;
-        display: flex;
-        gap: 30px;
-        margin-left: 100px;
-    }
-    
-    img#banner{
-        width: 70vw;
-        margin-left: 280px;
-        margin-top: 50px;
-        border-radius: 20px;
-    }
+svg{
+    margin-top: 470px;
+}
 
-    li a{
-        align-content: center;
-        text-decoration: none;
-        color: #766788;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: bolder;
-        font-size: 1.4em;
-    }
-    
-    .itens>a:hover{
-            background-image: linear-gradient(to right, #ef7689, #ff9b8f);
-            color: black;
-            background-clip: text;
-            -webkit-background-clip: text;          
-            /* Adicionado: */
-            -webkit-text-fill-color: transparent;
-    }
+.photos{    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
 
-    #entrar {
-        margin-left: 400px;
-    }
+.card-pet{
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: white;        
+    box-shadow: 5px 5px 4px #76678848;
+    margin-top: 50px;
+}
 
-    #cadastrar a:hover{
-        background-color: #766788;
+.card-pet h1{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     text-align: center;
+     margin-top: 10px;
+}
+
+.card-pet img{    
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.336);
+}
+
+.card-pet:hover{
+    scale: 1.1;
+    background-color: #9e6a90;
+    transition: 90ms;
+}
+
+@media (max-width: 1315px){
+    .itens a{
+        font-size: 12px;
     }
-    
-    li#cadastrar a{
-        background-color: #4d2d74;
-        color: white;
-        font-weight: lighter;
-        padding: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
-        border-radius: 10px;
-    }
-    
-    
-    section{
-        height: 65vh;
-    }
-    
-    svg{
-        margin-top: 470px;
-    }
-    
-    .photos{    
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
-        padding-left: 290px;
-        padding-right: 290px;
-    }
-    
-    .card-pet{
-        display: flex;
-        flex-direction: column;
-        height: 70px;
-        justify-content: center;
-        border-radius: 20px;
-        background-color: white;        
-        box-shadow: 5px 5px 4px #76678848;
-        margin-top: 50px;
-    }
-    
-    .card-pet h1{
-         font-family: Verdana, Geneva, Tahoma, sans-serif;
-         text-align: center;
-         margin-top: 10px;
-    }
-    
-    .card-pet img{    
-        margin-top: 30px;
-        border-radius: 10px;
-        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.336);
-    }
-    
-    .card-pet:hover{
-        scale: 1.1;
-        background-color: #9e6a90;
-        transition: 90ms;
-    }
-    
 }
 
 /*Estilos para mobile*/

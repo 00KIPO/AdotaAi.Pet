@@ -87,30 +87,41 @@ header{
     
     
     header #logo{
-        width: 60px;
-        height: 60px;
+        width: 4rem;
+        height: 4rem;
     }
     
-    header{
+    nav{
         display: flex;
+        height: 8vh;
+        width: 70vw;
         align-items: center;
-        padding-left: 300px;
+        margin: auto;                
+        justify-content: space-between;
     }
     
     header ul { 
         list-style: none;
         display: flex;
+        margin-left: 8%;
         gap: 30px;
-        margin-left: 100px;
     }
-
+    
+    img#banner{
+        width: 70vw;
+        margin-left: 15%;
+        margin-top: 50px;
+        border-radius: 20px;
+    }
+    
     li a{
         align-content: center;
         text-decoration: none;
         color: #766788;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: bolder;
-        font-size: 1.4em;
+        font-size: 1.4rem;
+        
     }
     
     .itens>a:hover{
@@ -121,9 +132,9 @@ header{
             /* Adicionado: */
             -webkit-text-fill-color: transparent;
     }
-
-    #entrar {
-        margin-left: 400px;
+    
+    #cadastrar a:hover{
+        background-color: #766788;
     }
     
     li#cadastrar a{
@@ -134,10 +145,6 @@ header{
         padding-left: 10px;
         padding-right: 10px;
         border-radius: 10px;
-    }
-    
-    #cadastrar a:hover{
-        background-color: #766788;
     }
     
     section{
@@ -168,6 +175,12 @@ header{
         padding: 40px;
     }
     
+}
+
+@media (max-width: 1315px){
+    .itens a{
+        font-size: 12px;
+    }
 }
 
 /*Estilos para celular*/
