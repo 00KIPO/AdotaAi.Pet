@@ -33,7 +33,39 @@
         <h1>Primeiro passo para o novo lar</h1>
 
     <div id="formulario">
+        <div>        
+            <img id="foto" src="imagens/inserir-icone-de-imagem.png" alt="">
+            <label for="foto">Escolha uma foto</label>
+        </div>
+        <div>
+            <label for="nomePet">Nome:</label>
+            <input type="text" name="nomePet" id="nomePet">
+            <br>
+            <label for="nasc">Data de nascimento</label>
+            <input type="text" name="nasc" id="nasc">
+            <br>
+            <label for="raca">Raça:</label>
+            <input type="text" name="raca" id="raca">
+            <br>
+            <label for="sexo">Sexo:</label>
+            <input type="radio" name="sexo" id="macho">            
+            <label for="macho">macho</label>
+            <input type="radio" name="sexo" id="femea">
+            <label for="femea">Femêa</label>
+            <br>
+            <label for="vacinado">Vacinado?</label>
+            <input type="checkbox" name="vacinado" id="vacinado">
+            
+            <label for="castrado">Castrado?</label>
+            <input type="checkbox" name="castrado" id="castrado">
 
+            <label for="vermifugado">vermifugado?</label>
+            <input type="checkbox" name="vermifugado" id="vermifugado">
+            <br>
+            <label for="descricao">Breve descrição</label>
+            <br>
+            <textarea style="resize: none" name="descricao" id="descricao" required rows="4" cols="50" maxlength="150"></textarea>
+        </div>
         <!--foto
         Nome
         Genero

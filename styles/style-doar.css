@@ -23,9 +23,9 @@ header{
 
 #disponiveis > h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5em;
-    color: rgb(172, 147, 98);
-    margin-bottom: 20px;
+    font-size: 2em;
+    color: #71556b;
+    margin-bottom: 40px;
 }
 
 .photos{
@@ -166,10 +166,8 @@ header{
 
     div#formulario{
         background-color: white;
-        width: 70vw;
-        height: 150px;
+        width: 65vw;
         margin-top: 40px;
-        margin-left: 10px;
         margin-bottom: 30px;
         border-radius: 10px;
         padding: 40px;
