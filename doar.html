@@ -10,11 +10,29 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="menu-desktop">
             <a href="index.html">
                 <img id="logo" src="imagens/logo.png"
                 alt="logo animal">
             </a>
+            <ul>
+                <li class="itens"><a href="adotar.html">Quero adotar</a></li>
+                <li class="itens"><a href="doar.html">Quero Doar</a></li>
+                <li class="itens"><a href="#">ONGs por perto</a></li>
+            </ul>
+            <ul>
+                <li class="itens" id="entrar"><a href="#">Entrar</a></li>
+                <li id="cadastrar"><a href="#">Cadastre-se</a></li>
+            </ul>
+        </nav>
+
+        <nav id="menu-mobile">
+            <a href="index.html">
+                <img id="logo" src="imagens/logo.png"
+                alt="logo animal">
+            </a>                      
+            <img src="imagens/menu-aberto.png" alt="" id="menu-icone">
+
             <ul>
                 <li class="itens"><a href="adotar.html">Quero adotar</a></li>
                 <li class="itens"><a href="doar.html">Quero Doar</a></li>
@@ -32,7 +50,8 @@
     <div id="disponiveis">
         <h1>Primeiro passo para o novo lar</h1>
 
-    <div id="formulario">
+    <div id="conteudo">
+        <div id="formulario">
         <div>        
             <img id="foto" src="imagens/inserir-icone-de-imagem.png" alt="">
             <label for="foto">Escolha uma foto</label>
@@ -48,9 +67,9 @@
             <input type="text" name="raca" id="raca">
             <br>
             <label for="sexo">Sexo:</label>
-            <input type="radio" name="sexo" id="macho">            
+            <input type="radio" name="sexo" id="macho" class="radio">            
             <label for="macho">macho</label>
-            <input type="radio" name="sexo" id="femea">
+            <input type="radio" name="sexo" id="femea" class="radio">
             <label for="femea">Femêa</label>
             <br>
             <label for="vacinado">Vacinado?</label>
@@ -74,7 +93,7 @@
 
 
     </div>
-    
+   </div> 
 </main>   
 </body>
 </html>
