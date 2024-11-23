@@ -14,10 +14,68 @@ header{
     background-color: white;
 }
 
-
-#disponiveis{
-    padding: 0;
+#menu-desktop{
+    display: none;
 }
+
+header{
+    background-color: white;
+}
+    
+header #logo{
+    width: 4rem;
+    height: 4rem;
+}
+
+#menu-mobile{
+    display: block;
+    align-items: center;
+}
+
+#topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+img#menu-icone{
+    width: 4rem;
+    height: 3.5rem;
+
+}
+
+#menu-mobile ul{ 
+    list-style: none;
+    display: block;
+}
+
+#menu-mobile li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #766788;
+    border-bottom: 1px solid #4d2d74;
+    height: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+#menu-mobile li a:hover{
+        background-image: linear-gradient(to right, #ef7689, #ff9b8f);
+        color: black;
+        background-clip: text;
+        -webkit-background-clip: text;          
+        /* Adicionado: */
+        -webkit-text-fill-color: transparent;
+}
+
+
+
+@media screen and (min-width: 768px){
 
 
 #disponiveis > h1{
@@ -34,12 +92,21 @@ header{
     font-weight: lighter;
 }
 
+
+#menu-desktop{
+    display: flex;
+}
+
+#menu-mobile{
+    display: none;
+}
+
 header #logo{
     width: 4rem;
     height: 4rem;
 }
 
-nav{
+#menu-desktop{
     display: flex;
     height: 8vh;
     width: 70vw;
@@ -55,14 +122,7 @@ header ul {
     gap: 30px;
 }
 
-img#banner{
-    width: 70vw;
-    margin-left: 15%;
-    margin-top: 50px;
-    border-radius: 20px;
-}
-
-li a{
+#menu-desktop li a{
     align-content: center;
     text-decoration: none;
     color: #766788;
@@ -72,7 +132,7 @@ li a{
     
 }
 
-.itens>a:hover{
+#menu-desktop a:hover{
         background-image: linear-gradient(to right, #ef7689, #ff9b8f);
         color: black;
         background-clip: text;
@@ -80,6 +140,7 @@ li a{
         /* Adicionado: */
         -webkit-text-fill-color: transparent;
 }
+
 
 #cadastrar a:hover{
     background-color: #766788;
@@ -141,129 +202,10 @@ svg{
     transition: 90ms;
 }
 
+}
+
 @media (max-width: 1315px){
     .itens a{
         font-size: 12px;
     }
-}
-
-/*Estilos para mobile*/
-@media screen and (max-width: 768px){
-    
-header #logo{
-    width: 50px;
-    height: 50px;
-}
-
-header{
-    display: flex;
-    width: 100vw;
-    border: 3px solid rgb(255, 0, 0);
-    align-items: center;
-    justify-content: space-around;
-}
-
-header #usericon{
-    height: 30px;
-    margin-left: 10px;
-}
-
-input{
-    border: 1px solid orange;
-    border-radius: 20px;
-    height: 25px;
-    width: 240px;
-    background-color: white;
-    background-image: url('https://th.bing.com/th?id=OIP._RTO9yp1xH5aQA0vS7fpHAHaHW&w=250&h=249&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2');
-    background-position: right center;
-    background-size: 20px;
-    background-repeat: no-repeat;
-    padding-left: 10px;
-}
-
-nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    margin: 0;
-    /*border: 3px solid red;*/
-    width: 100vw;
-    background-color: #f6bb4f;
-
-}
-
-nav li, ul{
-    display: flex;
-    list-style: none;
-}
-
-li a{
-    align-content: center;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bolder;
-    font-size: 1.5em;
-    text-align: center;
-    display: inline-block;
-    list-style-type: none;
-    /*border: 1px solid rgb(34, 18, 18);*/
-}
-
-li>a:active{
-    color: rgb(255, 255, 255);
-    border-bottom: 3px solid white;
-    height: 30px;
-    width: auto;
-    padding: 20px;
-}
-
-#menu{
-    margin: auto;
-    padding-top: 0;
-}
-
-main{
-    margin-top: 10px;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
-    width: 95vw;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 1px 17px 20px 0px rgba(0, 0, 0, 0.26);
-}
-
-#disponiveis{
-    margin-top: 30px;
-    padding: 0px;
-}
-
-
-#disponiveis > h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5em;
-    color: orange;
-    margin-left: 10px;
-    display: flex;
-}
-
-.photos{
-    display: flex;
-    margin-top: 15px;
-    padding: 10px;
-    justify-content: space-around;
-    gap: 10px;
-}
-
-.photos > img{
-    width: 90px;
-    height: 70px;
-}
-
-#banner > img{
-    width: 100%;
-
-}
-
 }

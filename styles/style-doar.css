@@ -30,10 +30,18 @@ header #logo{
     align-items: center;
 }
 
+#topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 img#menu-icone{
-    width: 3rem;
-    height: 3rem;
-    margin-left: 320px;
+    width: 4rem;
+    height: 3.5rem;
+
 }
 
 #menu-mobile ul{ 
@@ -76,6 +84,8 @@ li#cadastrar a{
     padding-right: 10px;
 }
 
+/*-------------------------------*/
+
 section{
     height: 100vh;
 }
@@ -88,14 +98,21 @@ body{
 }
 
 main{
-    width: 70vw;
+    width: 90vw;
     margin: auto;
+}
+
+#disponiveis h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    color: #71556b;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 
 div#conteudo{
     background-color: white;
-    width: 65vw;
     margin-top: 40px;
     margin-bottom: 30px;
     border-radius: 10px;
