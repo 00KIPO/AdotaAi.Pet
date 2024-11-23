@@ -54,26 +54,35 @@
 
     <div id="conteudo">
         <div id="formulario">
-        <div>        
-            <img id="foto" src="imagens/inserir-icone-de-imagem.png" alt="">
-            <label for="foto">Escolha uma foto</label>
-        </div>
-        <div>
-            <label for="nomePet">Nome:</label>
-            <input type="text" name="nomePet" id="nomePet">
+
+        <div>   
+            <div>
+            
+                <label for="nomePet">Nome:</label>
+                <input type="text" name="nomePet" id="nomePet">
+                <div id="inserir-foto">
+                    <img id="foto" src="imagens/icone-camera.png" alt="">
+                    <label for="foto">Escolha uma foto</label>
+                </div>
+            </div>
+        
             <br>
+
             <label for="nasc">Data de nascimento</label>
             <input type="text" name="nasc" id="nasc">
             <br>
+
             <label for="raca">Raça:</label>
             <input type="text" name="raca" id="raca">
             <br>
+
             <label for="sexo">Sexo:</label>
             <input type="radio" name="sexo" id="macho" class="radio">            
             <label for="macho">macho</label>
             <input type="radio" name="sexo" id="femea" class="radio">
             <label for="femea">Femêa</label>
             <br>
+
             <label for="vacinado">Vacinado?</label>
             <input type="checkbox" name="vacinado" id="vacinado">
             
@@ -83,8 +92,10 @@
             <label for="vermifugado">vermifugado?</label>
             <input type="checkbox" name="vermifugado" id="vermifugado">
             <br>
+
             <label for="descricao">Breve descrição</label>
             <br>
+
             <textarea style="resize: none" name="descricao" id="descricao" required maxlength="150"></textarea>
         </div>
         <!--foto
