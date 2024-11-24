@@ -234,7 +234,7 @@ input[type=checkbox]{
     
     #menu-desktop{
         display: flex;
-        height: 12vh;
+        height: 8vh;
         width: 70vw;
         align-items: center;
         margin: auto;                
@@ -254,7 +254,7 @@ input[type=checkbox]{
         color: #766788;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: bolder;
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         
     }
     
@@ -330,7 +330,7 @@ input[type=checkbox]{
     }
 
     div#nome > input[type=text]{
-        width: 700px;
+        width: 35vw;
         padding: 0.8rem;
         border-radius: 20px;
         height: 1.4rem;
@@ -342,7 +342,7 @@ input[type=checkbox]{
 
     div#inserir-foto{
         grid-area: foto;
-        width: 200px;
+        width: 220px;
         justify-content: center;
         cursor: pointer;
     } 
@@ -359,15 +359,16 @@ input[type=checkbox]{
     }
 
     div#raca  select{
-        width: 95%;
+        width: 65vw;
         padding-left: 30px;
         border-radius: 20px;
-        height: 1.4rem;
+        color: #9b85b67a;
+        height: 3rem;
         margin-left: 0px;
         margin-bottom: 20px;
         margin-top: 15px;
         border: 0.1px solid #76678828;
-        background-color: rgba(128, 128, 128, 0.192);
+        background-color: rgba(128, 128, 128, 0.082);
         font-size: 1.5em;
     }
 
@@ -386,12 +387,11 @@ input[type=checkbox]{
         margin-top: 20px;
         border-radius: 20px;        
         border: 0.1px solid #76678828;
-        background-color: rgba(128, 128, 128, 0.192);
+        background-color: rgba(128, 128, 128, 0.082);
     }
 
     div#sexo{
         grid-area: sexo;
-        margin-left: -130px;
     }
 
     div#sexo > input[type=radio]{
@@ -426,7 +426,7 @@ input[type=checkbox]{
         margin-top: 20px;
         border-radius: 20px;        
         border: 0.1px solid #76678828;
-        background-color: rgba(128, 128, 128, 0.192);
+        background-color: rgba(128, 128, 128, 0.082);
     }
 
     div#descricao{
@@ -440,7 +440,7 @@ input[type=checkbox]{
         resize: none;
         border-radius: 20px;        
         border: 0.1px solid #76678828;
-        background-color: rgba(128, 128, 128, 0.192);
+        background-color: rgba(128, 128, 128, 0.082);
         margin-top: 10px;
         font-size: 1.4rem;
         padding: 10px;

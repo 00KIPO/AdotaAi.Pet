@@ -1,0 +1,301 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: rooter;
+    src: url(../fonts/Roter\ Hoody\ Regular\ -\ \(Demo\)\ hanscostudio.com.ttf) format("opentype");
+}
+
+* { margin: 0; padding: 0; }
+
+body, html{
+    background-color: #76678836;
+}
+
+/*----------------------MENU DESKTOP---------------------------*/
+#menu-desktop{
+    display: none;
+}
+
+header{
+    background-color: white;
+}
+    
+header #logo{
+    width: 4rem;
+    height: 4rem;
+}
+
+#menu-mobile{
+    display: block;
+    align-items: center;
+}
+
+#topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+img#menu-icone{
+    width: 4rem;
+    height: 3.5rem;
+
+}
+
+#menu-mobile ul{ 
+    list-style: none;
+    display: block;
+}
+
+#menu-mobile li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #766788;
+    border-bottom: 1px solid #4d2d74;
+    height: 65px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+#menu-mobile li a:hover{
+        background-image: linear-gradient(to right, #ef7689, #ff9b8f);
+        color: black;
+        background-clip: text;
+        -webkit-background-clip: text;          
+        /* Adicionado: */
+        -webkit-text-fill-color: transparent;
+}
+
+#cadastrar a:hover{
+    background-color: #766788;
+}
+
+li#cadastrar a{
+    background-color: #4d2d74;
+    color: white;
+    font-weight: lighter;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*-------------------------------*/
+
+section{
+    height: 100vh;
+}
+
+svg{
+    margin-top: 470px;
+}
+body{
+    background-color: rgba(255, 255, 255, 0.103);
+}
+
+main{
+    width: 90vw;
+    margin: auto;
+}
+
+#disponiveis h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    color: #71556b;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+
+div#conteudo{
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+label{
+    color: #766788;
+    font-size: 1.2rem;
+}
+
+input[type=text]{
+    border-radius: 5px;
+    height: 1.4rem;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border: 0.5px solid #766788;
+}
+
+.radio{
+    height: 16px;
+    width: 16px;
+    margin-bottom: 20px;        
+    border: 2px solid #766788;
+}
+
+input[type='radio']:checked{
+    border-color: #f97070;
+  }
+
+input[type=checkbox]{
+    height: 16px;
+    width: 16px;
+    margin-bottom: 20px;        
+    border: 0.5px solid #766788;
+}
+
+/*-----------------------------------estilos para desktop---------------------------------*/
+
+@media screen and (min-width: 768px){
+    #menu-desktop{
+        display: flex;
+    }
+
+    #menu-mobile{
+        display: none;
+    }
+    
+    header #logo{
+        width: 6rem;
+        height: 6rem;
+    }
+    
+    #menu-desktop{
+        display: flex;
+        height: 8vh;
+        width: 70vw;
+        align-items: center;
+        margin: auto;                
+        justify-content: space-between;
+    }
+    
+    header ul { 
+        list-style: none;
+        display: flex;
+        margin-left: 8%;
+        gap: 30px;
+    }
+    
+    #menu-desktop li a{
+        align-content: center;
+        text-decoration: none;
+        color: #766788;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        font-size: 1.3rem;
+        
+    }
+    
+    #menu-desktop a:hover{
+            background-image: linear-gradient(to right, #ef7689, #ff9b8f);
+            color: black;
+            background-clip: text;
+            -webkit-background-clip: text;          
+            /* Adicionado: */
+            -webkit-text-fill-color: transparent;
+    }
+    
+    #cadastrar a:hover{
+        background-color: #766788;
+    }
+    
+    li#cadastrar a{
+        background-color: #4d2d74;
+        color: white;
+        font-weight: lighter;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 10px;
+    }
+    
+    section{
+        height: 100vh;
+    }
+    
+    svg{
+        margin-top: 470px;
+    }
+    body{
+        background-color: rgba(255, 255, 255, 0.103);
+    }
+
+    main{
+        width: 70vw;
+        margin: auto;
+    }
+
+    div#disponiveis>input[type=text]{
+        width: 30vw;
+        height: 2rem;
+        border-radius: 20px;
+    }
+
+    div#conteudo{
+        display: grid;
+        grid-template-rows: repeat(auto, 1fr);
+        gap: 20px;
+    }
+
+    div.perfil{        
+        height: 17vh;
+        width: 50vw;
+        display: flex; 
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 20px;
+        box-shadow: 2px 2px 34px rgba(0, 0, 0, 0.096);
+    }
+    
+    div.perfil img{
+        height: 10rem;
+        width: 10rem;
+        border-radius: 20px;
+        margin-right: 2rem;
+    }
+
+    div.infos-perfil{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    div img.localizacao{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    div > img.seta{
+        height: 4rem;
+        width: 4rem;
+        margin-left: auto;
+        margin-top: auto;        
+        cursor: pointer;
+    }
+
+    h2.nome{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.8em;
+        color: #71556b;
+    }
+
+    p#descricao{
+        color: #71556b;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 32vw;
+    }
+
+
+}
+
+@media (max-width: 1315px){
+    .itens a{
+        font-size: 12px;
+    }
+}

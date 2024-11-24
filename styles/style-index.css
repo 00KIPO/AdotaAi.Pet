@@ -162,7 +162,7 @@ header #logo{
 
 #menu-desktop{
     display: flex;
-    height: 12vh;
+    height: 8vh;
     width: 70vw;
     align-items: center;
     margin: auto;                
@@ -182,7 +182,7 @@ header ul {
     color: #766788;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     
 }
 

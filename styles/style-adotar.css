@@ -263,7 +263,7 @@ div#filtros{
     
     #menu-desktop{
         display: flex;
-        height: 12vh;
+        height: 8vh;
         width: 70vw;
         align-items: center;
         margin: auto;                
@@ -283,7 +283,7 @@ div#filtros{
         color: #766788;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: bolder;
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         
     }
     
@@ -422,6 +422,12 @@ div#filtros{
     .nome{
         font-weight: bolder;
         font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .nome img{
+        width: 2rem;
+        height: 2rem;
     }
 
     .infos img{
